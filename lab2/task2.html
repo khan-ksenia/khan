@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        alert('Поиск наименьшего из трех чисел');
+        let A = Number(prompt('Введите значение А'));
+        let B = Number(prompt('Введите значение B'));
+        let C = Number(prompt('Введите значение C'));
+        let minimum = A;
+        if (A > B) {
+            minimum = B
+        }
+        if (minimum > C) {
+            minimum = C
+        }
+        alert('Наименьшее: ' + minimum);
+    </script>
+</body>
+</html>
