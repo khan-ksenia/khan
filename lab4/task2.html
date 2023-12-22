@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>   //0   1   2  3   4  5   6  7
+        let A = [3, -8, 23, 5, 0, -1, 90, 2];
+        let N = A.length
+        let K = 3;
+        let L = 6;
+        let indexes = []
+        for (let i = 0; i < N; i++) {   //запоминаем индексы (новый массив)
+            if ((A[i] >= A[K]) && (A[i] <= A[L])) {
+                indexes.push(i);
+            }
+        }
+        let N2 = indexes.length
+        for (let i = 0; i < N2/2; i++) {
+            temp = A[indexes[i]];
+            A[indexes[i]] = A[indexes[N2 - 1 - i]];
+            A[indexes[N2 - 1 - i]] = temp; 
+        }
+        console.log(A)
+    </script>
+</body>
+</html>
