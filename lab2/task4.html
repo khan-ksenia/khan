@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+
+        let a = 2.1;
+        let b = 0.7;
+        let x = Number(prompt('X = '));
+        let y;
+        switch (x) {
+            case 0:
+                y = (1 / (1 + a * Math.abs(x)));
+                break;
+            case -2:
+                y = Math.cos(b * (x ** 2)) + 0.5 * x;
+                break;
+            case 1:
+                y = Math.sqrt(1 + Math.exp(1) ** (a * x));
+                break;
+            default:
+                y = 'не существует'
+        }
+        alert('Y = ' + y);
+
+    </script>
+</body>
+</html>
