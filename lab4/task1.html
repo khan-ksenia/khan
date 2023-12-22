@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let A = [100, 4, -7, 788, 56];
+        let N = A.length;
+        for (let i = 0; i < N / 2; i++) {   
+            if (i == Math.floor(N / 2)) {    //для массива с нечет. кол-вом эл.
+                console.log(A[i])
+                }
+            else {
+                console.log(A[i]);
+                console.log(A[N - 1 - i]);
+                }
+        }
+    </script>
+</body>
+</html>
