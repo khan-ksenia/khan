@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+</head>
+<body>
+    <button onclick="Addition()">сложение</button>
+    <button onclick="Subtraction()">вычитание</button>
+    <button onclick="Multiplication()">умножение</button>
+    <button onclick="Division()">целочисленное деление</button>
+    <button onclick="Remainder()">остаток от деления</button>
+    <script>
+        function Addition() {
+            alert('Операция сложения двух чисел')
+            let term_one = prompt('Введите первое слагаемое:');
+            let term_two = prompt('Введите второе слагаемое:');
+            let addition_result = Number(term_one) + Number(term_two);
+            alert(`Результат операции сложения ${term_one} и ${term_two}: ` + addition_result);
+        }
+
+        function Subtraction() {
+            alert('Операция вычитания двух чисел')
+            let minuend = prompt('Введите значение уменьшаемого:');
+            let subtrahend = prompt('Введите значение вычитаемого:');
+            let subtraction_result = Number(minuend) - Number(subtrahend);
+            alert(`Результат операции вычитания ${minuend} и ${subtrahend}: ` + subtraction_result);
+        }
+
+        function Multiplication() {
+            alert('Операция умножения двух чисел')
+            let multiplier_one = prompt('Введите первый множитель:');
+            let multiplier_two = prompt('Введите второй множитель:');
+            let multiplication_result = Number(multiplier_one) * Number(multiplier_two);
+            alert(`Результат операции умножения ${multiplier_one} и ${multiplier_two}: ` + multiplication_result);
+        }
+
+        function Division() {
+            alert('Операция целочисленного деления двух чисел')
+            let dividend = prompt('Введите значение делимого:');
+            let divider = prompt('Введите значение делителя:');
+            let division_result = (Number(dividend) / Number(divider)) - (Number(dividend) % Number(divider) / Number(divider));
+            alert(`Результат операции целочисленного деления ${dividend} на ${divider}: ` + division_result);
+        }
+
+        function Remainder() {
+            alert('Операция вычисления остатка от деления двух чисел')
+            let dividend_remain = prompt('Введите значение делимого:');
+            let divider_remain = prompt('Введите значение делителя:');
+            let remainder_result = Number(dividend_remain) % Number(divider_remain);
+            alert(`Результат вычисления остатка от деления ${dividend_remain} на ${divider_remain}: ` + remainder_result);
+        }
+
+    </script>
+</body>
+</html>
