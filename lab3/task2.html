@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let N = prompt('Введите N (> 0)');
+        let result = 1;
+        let multiplier = 1;
+        for (let i = 0; i < N; i++) {
+            multiplier += 0.1;
+            result *= multiplier
+        }
+        console.log(result);
+    </script>
+</body>
+</html>
